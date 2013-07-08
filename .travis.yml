@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.0.0
+
+env:
+- DB=postgresql
+
+script:
+- RAILS_ENV=test bundle exec rake --trace db:migrate
+
+before_script:
+  - psql -c 'create database wiggles_test;' -U postgres
+
+notifications:
+  email: false
