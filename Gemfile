@@ -6,6 +6,8 @@ gem 'pg', '0.15.1'
 
 gem 'simple_form'
 gem 'thin'
+gem 'devise', github: 'plataformatec/devise', branch: 'rails4'
+gem 'high_voltage'
 
 gem 'sass-rails', '4.0.0'
 gem 'uglifier', '2.1.1'
